@@ -19,7 +19,7 @@ function checkName() {
 }
 
 function checkAge() {
-    var regEx = new RegExp('\[0-9]');
+    var regEx = new RegExp('^(([0-9][1-9])|([1-9][0-9])|[1-9])$');
     var age = document.getElementById('age').value
     if(regEx.test(age)) {
        document.getElementById('age').style.backgroundColor = "red"
